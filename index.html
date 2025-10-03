@@ -4,7 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>laundary wallah</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #5a67d8;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .username {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+
+        .left {
+            width: 50%;
+            padding-right: 50px;
+        }
+
+        .left h1 {
+            font-size: 40px;
+            color: #333;
+        }
+
+        .highlight {
+            color: #00b4d8;
+        }
+
+        .left p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .button {
+            background-color: #00b4d8;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0096c7;
+        }
+
+        .right {
+            width: 50%;
+            text-align: center;
+        }
+
+        .right img {
+            width: 80%;
+            max-width: 500px;
+        }
+
+        /* Existing content styling */
+        .content {
+            padding: 40px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                padding: 30px;
+            }
+
+            .left, .right {
+                width: 100%;
+                padding: 0;
+            }
+
+            .left h1 {
+                font-size: 30px;
+            }
+
+            .right img {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    </style>
 </head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><span class="username">Username</span></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <!-- Left Div -->
+        <div class="left">
+            <h1>
+                Revitalize Your<br>
+                Clothes with Expert<br>
+                <span class="highlight">Laundry Services!</span>
+            </h1>
+            <p>
+                From premium dry cleaning to wash and fold, we deliver care and convenience. 
+                Schedule a pickup and rediscover the freshness of your clothes today!
+            </p>
+            <button class="button">Book a Service Today!</button>
+        </div>
+
+        <!-- Right Div -->
+        <div class="right">
+            <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=600&auto=format&fit=crop" alt="Washing Machine">
+        </div>
+    </div>
+    <div class="content">   
 <body>
     <dl><dt><h1>Laundary Wallah:</h1></dt>
     <dd><h2>Your one stop solution for all your laundry problems</h2></dd>
